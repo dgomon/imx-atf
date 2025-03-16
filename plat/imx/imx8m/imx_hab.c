@@ -86,7 +86,7 @@ struct hab_rvt_api *g_hab_rvt_api = (struct hab_rvt_api *)HAB_RVT_BASE;
 
 #define IMX_DRAM_0_START (IMX_DRAM_BASE)
 #define IMX_DRAM_0_SIZE  (BL32_BASE - IMX_DRAM_BASE)
-#define IMX_DRAM_1_START (BL32_BASE + BL32_SIZE)
+#define IMX_DRAM_1_START ((unsigned long long)BL32_BASE + (unsigned long long)BL32_SIZE)
 #define IMX_DRAM_1_SIZE  (IMX_DRAM_BASE + IMX_DRAM_SIZE - IMX_DRAM_1_START)
 
 /*******************************************************************************
